@@ -1,1 +1,6 @@
-# LS-NLP
+## Assignment 2.1
+### Summary
+When comparing the results, the manual TF-IDF scores closely match those produced by scikit-learn’s TfidfVectorizer, showing similar patterns in the importance assigned to words across documents. In contrast, CountVectorizer outputs simple raw counts, leading to larger values for words that occur frequently, regardless of their significance to distinguishing between documents. Overall, TF-IDF methods (both manual and scikit-learn’s) produce lower scores for common words and higher scores for more unique terms, while CountVectorizer tends to inflate the impact of words appearing often in the corpus.
+
+
+The reason scores for common words like “the” differ significantly is because TF-IDF explicitly penalizes terms that appear in many documents by assigning them a lower inverse document frequency (IDF). This reflects the intuition that words occurring everywhere carry little useful information about what makes a document unique. Meanwhile, CountVectorizer lacks this normalization, so frequent words dominate the representation, regardless of their discriminative power. Thus, TF-IDF effectively reduces the weight of common words, focusing instead on terms that better separate documents by their distinctive content.
