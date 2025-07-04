@@ -3,7 +3,6 @@ from transformers import pipeline, AutoTokenizer
 from  datasets import load_dataset
 from transformers import AutoModelForSequenceClassification
 from transformers import TrainingArguments
-from tensorflow.keras.optimizers import Adam
 import evaluate
 import numpy as np
 import pandas as pd
