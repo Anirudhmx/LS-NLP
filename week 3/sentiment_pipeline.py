@@ -119,30 +119,3 @@ with torch.no_grad():
     predictions = torch.argmax(logits, dim=-1)
 
 print(predictions)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
