@@ -10,8 +10,8 @@ if "message" not in st.session_state:
 for msg in st.session_state.message:
     st.chat_message(msg['role']).markdown(msg['content'])
 
-model = GPT2LMHeadModel.from_pretrained("./finetuned_gpt2")
-tokenizer = GPT2Tokenizer.from_pretrained("./finetuned_gpt2")
+model = GPT2LMHeadModel.from_pretrained("Anirudhmx/finetuned_gpt2")
+tokenizer = GPT2Tokenizer.from_pretrained("Anirudhmx/finetuned_gpt2")
 # model.eval()
 
 if prompt := st.chat_input("What is up?"):

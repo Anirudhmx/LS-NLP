@@ -2,3 +2,4 @@ transformers
 datasets
 streamlit
 torch
+huggingface_hub
